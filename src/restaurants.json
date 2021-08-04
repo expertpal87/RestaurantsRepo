@@ -1,0 +1,398 @@
+
+//=----------- list Data ------//
+
+{
+  "restaurants": [{
+    "id": 1,
+    "name": "Mission Chinese Food",
+    "neighborhood": "Manhattan",
+    "photograph": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "address": "171 E Broadway, New York, NY 10002",
+    "latlng": {
+      "lat": 40.713829,
+      "lng": -73.989667
+    },
+    "cuisine_type": "Asian",
+
+    
+    "operating_hours": {
+      "Monday": "5:30 pm - 11:00 pm",
+      "Tuesday": "5:30 pm - 12:00 am",
+      "Wednesday": "5:30 pm - 12:00 am",
+      "Thursday": "5:30 pm - 12:00 am",
+      "Friday": "5:30 pm - 12:00 am",
+      "Saturday": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am",
+      "Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Mission Chinese Food has grown up from its scrappy Orchard Street days into a big, two story restaurant equipped with a pizza oven, a prime rib cart, and a much broader menu. Yes, it still has all the hits — the kung pao pastrami, the thrice cooked bacon —but chef/proprietor Danny Bowien and executive chef Angela Dimayuga have also added a raw bar, two generous family-style set menus, and showstoppers like duck baked in clay. And you can still get a lot of food without breaking the bank."
+      },
+      {
+        "name": "Morgan",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "This place is a blast. Must orders: GREEN TEA NOODS, sounds gross (to me at least) but these were incredible!, Kung pao pastrami (but you already knew that), beef tartare was a fun appetizer that we decided to try, the spicy ma po tofu SUPER spicy but delicous, egg rolls and scallion pancake i could have passed on... I wish we would have gone with a larger group, so much more I would have liked to try!"
+      },
+      {
+        "name": "Jason",
+        "date": "October 26, 2016",
+        "rating": 3,
+        "comments": "I was VERY excited to come here after seeing and hearing so many good things about this place. Having read much, I knew going into it that it was not going to be authentic Chinese. The place was edgy, had a punk rock throwback attitude, and generally delivered the desired atmosphere. Things went downhill from there though. The food was okay at best and the best qualities were easily overshadowed by what I believe to be poor decisions by the kitchen staff."
+      }
+    ]
+  }, {
+    "id": 2,
+    "name": "Emily",
+    "neighborhood": "Brooklyn",
+    "photograph": "https://i.pinimg.com/originals/4e/b7/49/4eb749705c6bc1c957e9e74792d711f2.jpg",
+    "address": "919 Fulton St, Brooklyn, NY 11238",
+    "latlng": {
+      "lat": 40.683555,
+      "lng": -73.966393
+    },
+    "cuisine_type": "Pizza",
+    "operating_hours": {
+      "Monday": "5:30 pm - 11:00 pm",
+      "Tuesday": "5:30 pm - 11:00 pm",
+      "Wednesday": "5:30 pm - 11:00 pm",
+      "Thursday": "5:30 pm - 11:00 pm",
+      "Friday": "5:30 pm - 11:00 pm",
+      "Saturday": "5:00 pm - 11:30 pm",
+      "Sunday": "12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm"
+    },
+    "reviews": [{
+        "name": "Steph",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Five star food, two star atmosphere. I would definitely get takeout from this place - but dont think I have the energy to deal with the hipster ridiculousness again. By the time we left the wait was two hours long."
+      },
+      {
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "This cozy Clinton Hill restaurant excels at both straightforward and unusual wood-fired pizzas. If you want a taste of the latter, consider ordering the Emily, which is topped with mozzarella, pistachios, truffled sottocenere cheese, and honey. The menu includes salads and a handful of starters, as well as a burger that some meat connoisseurs consider to be among the best in the city."
+      },
+      {
+        "name": "Sam",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "5 star atmosphere as it is very cozy with great staff. 5 star food as their Emmy burger is outrageously good. and its on a pretzel bun.. Too juicy for its own good and downright addicting. Also try the Colony pizza. Many others looked like worth competitors, but the Colony really found its way to my heart. when you start with a great crust, top it with top notch cheese and sauce, you've got a winner. But, if you go a step further and add the salty from the pepperoni, the sweet from the honey, and the spicy from the chili oil.... your mouth is confused and happy at the same time."
+      }
+    ]
+  }, {
+    "id": 3,
+    "name": "Kang Ho Dong Baekjeong",
+    "neighborhood": "Manhattan",
+    "photograph": "data:image/jpeg;base64,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",
+    "address": "1 E 32nd St, New York, NY 10016",
+    "latlng": {
+      "lat": 40.747143,
+      "lng": -73.985414
+    },
+    "cuisine_type": "Asian",
+    "operating_hours": {
+      "Monday": "11:30 am - 2:00 am",
+      "Tuesday": "11:30 am - 2:00 am",
+      "Wednesday": "11:30 am - 2:00 am",
+      "Thursday": "11:30 am - 2:00 am",
+      "Friday": "11:30 am - 6:00 am",
+      "Saturday": "11:30 am - 6:00 am",
+      "Sunday": "11:30 am - 2:00 am"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "The tables at this 32nd Street favorite are outfitted with grills for cooking short ribs, brisket, beef tongue, rib eye, and pork jowl. The banchan plates are uniformly good, and Deuki Hong’s menu also includes winning dishes like stir-fried squid noodles, kimchi stew, and seafood pancakes. If it’s available, make sure to order the kimchi and rice “lunchbox.” Baekjeong is a great place for large groups and birthday parties."
+      },
+      {
+        "name": "ZS",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "I've been to Korea before and many other Korean BBQ places. We had the regular pork belly and a beef (forgot which cut) and a seafood tofu soup. Two meat and a soup was just prefect for the two of us. We could have done one meat and one soup. The portions of the meat are great! The beef was juicy, tender and so good. The sides were excellent. "
+      },
+      {
+        "name": "Emily",
+        "date": "October 26, 2016",
+        "rating": 2,
+        "comments": "MEH. I've tried their Jersey location as well but Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!"
+      }
+    ]
+  }, {
+    "id": 4,
+    "name": "Katz's Delicatessen",
+    "neighborhood": "Manhattan",
+    "photograph": "https://media.istockphoto.com/photos/varied-food-carbohydrates-protein-vegetables-fruits-dairy-legumes-on-picture-id1218254547?b=1&k=6&m=1218254547&s=170667a&w=0&h=EXwwoHJ3wI0H2jDfoFhqOiIo2c4cL0y7R8Gop3iIO30=",
+    "address": "205 E Houston St, New York, NY 10002",
+    "latlng": {
+      "lat": 40.722216,
+      "lng": -73.987501
+    },
+    "cuisine_type": "American",
+    "operating_hours": {
+      "Monday": "8:00 am - 10:30 pm",
+      "Tuesday": "8:00 am - 10:30 pm",
+      "Wednesday": "8:00 am - 10:30 pm",
+      "Thursday": "8:00 am - 2:30 am",
+      "Friday": "8:00 am - Sat",
+      "Saturday": "Open 24 hours",
+      "Sunday": "Sat - 10:30 pm"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "In 127 years, little has changed at Katz's. It remains one of New York's — and the country's — essential Jewish delicatessens. Every inch of the massive Lower East Side space smells intensely of pastrami and rye loaves. The sandwiches are massive, so they are best when shared. Order at the counter, and don't forget to tip your slicer — your sandwich will be better for it."
+      },
+      {
+        "name": "Allen",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "If I lived in NY and got diabetes from eating here every single time I ate, I would do it over and over and over again just for that first bite. These guys know how to make a sandwich. The heart attack comes free of charge! Came by while I was visiting NYC. First pit-stop when I come back :)!"
+      },
+      {
+        "name": "David",
+        "date": "October 26, 2016",
+        "rating": 2,
+        "comments": "Ok so four of us came. One more later who didn't order becauase it's so expensive and simple. Seriously, a bunch of meat albeit you can sample beforehand on rye/white/wheat bread. Cheese extra. Pickles free, you can just ask them at the pickup counter. But seriously 20 bucks gone for an non-flavored half sandwich. And a line that is long, especially if you want seating. I'm down to just take a quick look where Sally and Harry sat and leave to the other delis all around NYC. Oh and they accept Samsung pay."
+      }
+    ]
+  }, {
+    "id": 5,
+    "name": "Roberta's Pizza",
+    "neighborhood": "Brooklyn",
+    "photograph": "data:image/jpeg;base64,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",
+    "address": "261 Moore St, Brooklyn, NY 11206",
+    "latlng": {
+      "lat": 40.705089,
+      "lng": -73.933585
+    },
+    "cuisine_type": "Pizza",
+    "operating_hours": {
+      "Monday": "11:00 am - 12:00 am",
+      "Tuesday": "11:00 am - 12:00 am",
+      "Wednesday": "11:00 am - 12:00 am",
+      "Thursday": "11:00 am - 12:00 am",
+      "Friday": "11:00 am - 12:00 am",
+      "Saturday": "10:00 am - 12:00 am",
+      "Sunday": "10:00 am - 12:00 am"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Roberta's is the epicenter of the modern Brooklyn food scene.The pizzas are fantastic, but the restaurant really flexes its muscles with the vegetable dishes. In addition to the pies, consider ordering the radishes, the romaine salad, the roasted beets, and some of the charcuterie."
+      },
+      {
+        "name": "Raymond",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Roberta's, one of the better pizzas I have had in my life. Very trendy and hipsterish spot. Came here for lunch on a random weekday afternoon and when we arrived, there was a line forming already. The space is a bit cramped. You'll get to know your neighbors soon enough. The pizza is just delightful and delicious. It's a ncie plus that you get to see them firing up the pizzas in the corner. The major issue with Roberta's is the trek out to the Williamsburg/Bushwick."
+      },
+      {
+        "name": "Laurel",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "The pizza is fantastic, not THE best I've ever had, but would definitely go back since it has great food and great ambiance. Definitely worth going to. It has A LOT of hype in the New York food scene, and I question if it deserves all of it, but it's still a totally great spot to hit up when in the area!!"
+      }
+    ]
+  }, {
+    "id": 6,
+    "name": "Hometown BBQ",
+    "neighborhood": "Brooklyn",
+    "photograph": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWkf4750pI7XkszSGX8Mx_tUBf2eYCxmLSA&usqp=CAU",
+    "address": "454 Van Brunt St, Brooklyn, NY 11231",
+    "latlng": {
+      "lat": 40.674925,
+      "lng": -74.016162
+    },
+    "cuisine_type": "American",
+    "operating_hours": {
+      "Monday": "Closed",
+      "Tuesday": "12:00 pm - 10:00 pm",
+      "Wednesday": "12:00 pm - 10:00 pm",
+      "Thursday": "12:00 pm - 10:00 pm",
+      "Friday": "12:00 pm - 11:00 pm",
+      "Saturday": "12:00 pm - 11:00 pm",
+      "Sunday": "12:00 pm - 9:00 pm"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Barbecue aficionados agree that Billy Durney is cooking up some of the best Texas-style barbecue in the city. Straightforward classics like smoked brisket and baby back ribs are always a strong choice, but there are also options like pork belly tacos and a lamb belly banh mi. The space is sprawling in a way that feels like the real deal, and Durney himself can usually be found working the room, and keeping a watchful eye on the smoking meats. It's counter service only, and there's often a line, but for the scene and certainly for the meat, it's easily worth the trip to Red Hook."
+      },
+      {
+        "name": "Michelle",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Overall, a great try of New York BBQ. The restaurant décor is rustic with a good amount of seats to sit and enjoy the meal. I definitely would love to come back and try that monster of a beef rib!"
+      },
+      {
+        "name": "Ai-Mei",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "mmmmmm, what a gem this is in bklyn! I loveeee how soft their brisket is here. Their pork tacos are to die for, their different variety of ribs and lastly, their lamb is not gamey at all. Super wallet friendly for the amount they give you. I highly recommend this spot- after eating here, you can definitely walk over for Steve's key lime pies."
+      }
+    ]
+  }, {
+    "id": 7,
+    "name": "Superiority Burger",
+    "neighborhood": "Manhattan",
+    "photograph": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfw_6ANUIrHunZbz8z78NaVy7slPzQvvLMQ&usqp=CAU",
+    "address": "430 E 9th St, New York, NY 10009",
+    "latlng": {
+      "lat": 40.727397,
+      "lng": -73.983645
+    },
+    "cuisine_type": "American",
+    "operating_hours": {
+      "Monday": "11:30 am - 10:00 pm",
+      "Tuesday": "Closed",
+      "Wednesday": "11:30 am - 10:00 pm",
+      "Thursday": "11:30 am - 10:00 pm",
+      "Friday": "11:30 am - 10:00 pm",
+      "Saturday": "11:30 am - 10:00 pm",
+      "Sunday": "11:30 am - 10:00 pm"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Brooks Headley’s tiny East Village cafe is so much more than a veggie burger spot — it's one of the best bang-for-your-buck restaurants in Lower Manhattan. Headley and his crew turn seasonal vegetables into delectable salads and riffs on American comfort food favorites. The specials menu changes daily, and the rest of the menu is constantly evolving. You can get a lot of food to eat here for under $15 per person."
+      },
+      {
+        "name": "Gabriel",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "I was turned on to this place following the glowing NYT review. Its near my area of the city so I figured why not go? Man they weren't kidding, Superiority Burger is probably the best vegetarian experience I've ever had!"
+      },
+      {
+        "name": "Shivi",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Great flavors and very satisfying. Craving a sandwich, I stopped by on a Friday night with a vegetarian friend. Super small location with just a few seats inside. Ambiance is a bit industrial, good is definitely much more sophisticated than the look of the place! Ordered the superiority burger anda side of potato salad. The potato salad was very light and tasted clean ( less mayo, lots of dill and some cucumber) -- refreshing for a humid summer night! Sandwich was surprisingly delicious - it is very small ( funny allusion to a White Castle burger) but it packs a punch! Not only are there layers of flavors ( amazing sauces) but the party itself had a great texture Ahmed flavor-- well done and so wonderful! Will definitely stop by again for an overall amazing burger/sandwich. Staff was super nice and accommodating but not out of the way friendly."
+      }
+    ]
+  }, {
+    "id": 8,
+    "name": "The Dutch",
+    "neighborhood": "Manhattan",
+    "photograph": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfw_6ANUIrHunZbz8z78NaVy7slPzQvvLMQ&usqp=CAU",
+    "address": "131 Sullivan St, New York, NY 10012",
+    "latlng": {
+      "lat": 40.726584,
+      "lng": -74.002082
+    },
+    "cuisine_type": "American",
+    "operating_hours": {
+      "Monday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "Tuesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "Wednesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "Thursday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "Friday": "11:30 am - 3:00 pm, 5:30 pm - 11:30 pm",
+      "Saturday": "10:00 am - 3:00 pm, 5:30 pm - 11:30 pm",
+      "Sunday": "10:00 am - 3:00 pm, 5:30 pm - 11:00 pm"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Over the last five years, The Dutch has turned into the quintessential American restaurant that chef Andrew Carmellini and partners Josh Pickard and Luke Ostrom sought to evoke when it first opened. It’s a great choice when you’re craving a steak, a burger, or oysters, and the menu always includes plentiful seafood options as well as pastas. The Dutch is now an indelible part of the Soho landscape."
+      },
+      {
+        "name": "Loren",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "I randomly came here on a Saturday night. I was pleasantly surprised with the food and the service. We had the calamari and the ceviche with avocado, and then the catfish. Oh! Then we had the banana soufflé for dessert with ice cream. It was all delicious and well put together. Would love to eat here again."
+      },
+      {
+        "name": "Lori",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Aside from the slightly claustrophobic dining area and the fact that you may have difficulty hearing your dining companion, I'd return to The Dutch without hesitation. The food is surprisingly well-executed and conceived, and our dinner service flowed smoothly without a hitch. Just make sure to get a reservation in advance, as I'm sure more than just a few other people will have the same idea."
+      }
+    ]
+  }, {
+    "id": 9,
+    "name": "Mu Ramen",
+    "neighborhood": "Queens",
+    "photograph": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfw_6ANUIrHunZbz8z78NaVy7slPzQvvLMQ&usqp=CAU",
+    "address": "1209 Jackson Ave, Queens, NY 11101",
+    "latlng": {
+      "lat": 40.743797,
+      "lng": -73.950652
+    },
+    "cuisine_type": "Asian",
+    "operating_hours": {
+      "Monday": "5:00 pm - 10:00 pm",
+      "Tuesday": "5:00 pm - 10:00 pm",
+      "Wednesday": "5:00 pm - 10:00 pm",
+      "Thursday": "5:00 pm - 10:00 pm",
+      "Friday": "5:00 pm - 11:00 pm",
+      "Saturday": "5:00 pm - 11:00 pm",
+      "Sunday": "5:00 pm - 10:00 pm"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Joshua Smookler’s two-year-old ramen shop serves one of the best tonkotsu broths around. Beyond ramen, Mu also offers some high minded plates, like foie gras-stuffed chicken wings, as well as dry-aged Japanese Wagyu beef specials. Mu is just 10 short minutes away from Midtown via the 7-train."
+      },
+      {
+        "name": "Brittany",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "Overall, I would definitely recommend this place if you enjoy thick curly noodles with a thick, intense broth.  If you don't there are still other options but I can't vouch for those."
+      },
+      {
+        "name": "Sally",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "One of the tastiest and most unique ramen places I've been to in NYC, but also the priciest. I think overall its worth the try. Not an everyday casual ramen shop though."
+      }
+    ]
+  }, {
+    "id": 10,
+    "name": "Casa Enrique",
+    "neighborhood": "Queens",
+    "photograph": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAo6pygpg5ROO6ATTS53LI1YvCCI8BfOjCig&usqp=CAU",
+    "address": "5-48 49th Ave, Queens, NY 11101",
+    "latlng": {
+      "lat": 40.743394,
+      "lng": -73.954235
+    },
+    "cuisine_type": "Mexican",
+    "operating_hours": {
+      "Monday": "5:00 pm - 12:00 am",
+      "Tuesday": "5:00 pm - 12:00 am",
+      "Wednesday": "5:00 pm - 12:00 am",
+      "Thursday": "5:00 pm - 12:00 am",
+      "Friday": "5:00 pm - 12:00 am",
+      "Saturday": "11:00 am - 12:00 am",
+      "Sunday": "11:00 am - 12:00 am"
+    },
+    "reviews": [{
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "Head to this laid-back Long Island City restaurant for beef tongue tacos, chicken smothered in a heady mole sauce, and a monster crab tostada. New York's only Michelin-starred Mexican restaurant is an especially cool choice for lunch during the week or drinks after work. Eater critic Ryan Sutton awarded this restaurant two stars."
+      },
+      {
+        "name": "Rob",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "The hype was real. Please go. Get the ceviche. And the tres leches. You're welcome"
+      },
+      {
+        "name": "Jason",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "For a Michelin star restaurant, it's fairly priced and the food is fairly good. Started with a strawberry margarita which was good in flavor but not much alcohol. Had the chicken enchiladas with salsa verde and it was really good. Great balance in flavor and a good portion. Extra tasty with their hot sauces. My wife had the lamb but it was a bit too salty for our taste. Although, it was cooked very well and fell off the bone. The highlight of the night was the tres leches cake. Probably the best I've ever had to be honest. Not too sweet and very milky. Overall, one of my top 3 favorite Mexican in NY."
+      }
+    ]
+  }]
+}
